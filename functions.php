@@ -1,7 +1,6 @@
 <?php
 
 function theme_scripts_method(){
-  wp_enqueue_script( 'jquery');  
   wp_enqueue_style( 'style', get_stylesheet_uri() );
   wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
   wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array (), 1.0, false);
