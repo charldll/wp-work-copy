@@ -184,6 +184,10 @@ section {
   margin-inline: auto;
 }
 
+.textbox {
+  margin: 0.5rem;
+}
+
 /* About section animation */
 
 /* As the scrolling goes on the about section is fading out */
@@ -214,51 +218,9 @@ section {
   justify-content: start;
 }
 
-.about-card:nth-child(2n) {
-  border-block: 2px solid black;
-}
-
-/* https://css-tip.com/adhesive-tape-image/ */
-.photo-with-tape {
-  --w: 280px; /* image width */
-  --r: 1; /* image ratio */
-  /* control the tape dimension (adjust to understand) */
-  --l: 45px;
-  --s: 20px;
-
-  --_d: calc(var(--s) + var(--l));
-  width: var(--w);
-  padding: calc(var(--_d) / 2);
-  aspect-ratio: var(--r);
-  object-fit: cover;
-  --_g: calc(100% - var(--w) / 2) /
-    calc(var(--w) * (1 + 1 / var(--r)) - 2 * (var(--s) + var(--_d)));
-  background: repeating-conic-gradient(from 45deg, #0000 0 25%, #0005 0 50%)
-    var(--_g);
-  -webkit-mask: repeating-conic-gradient(from 45deg, #000 0 25%, #0005 0 50%)
-    var(--_g);
-  clip-path: polygon(
-    var(--l) 0,
-    var(--_d) var(--s),
-    calc(100% - var(--_d)) var(--s),
-    calc(100% - var(--l)) 0,
-    100% var(--l),
-    calc(100% - var(--s)) var(--_d),
-    calc(100% - var(--s)) calc(100% - var(--_d)),
-    100% calc(100% - var(--l)),
-    calc(100% - var(--l)) 100%,
-    calc(100% - var(--_d)) calc(100% - var(--s)),
-    var(--_d) calc(100% - var(--s)),
-    var(--l) 100%,
-    0 calc(100% - var(--l)),
-    var(--s) calc(100% - var(--_d)),
-    var(--s) var(--_d),
-    0 var(--l)
-  );
-}
-
-.photo-with-tape:hover {
-  transform: scale(1.3);
+/*any child of "about-card" other than the first one shall have top border*/
+.about-card:nth-child(n+2) {
+  border-top: 2px solid rgb(21, 32, 30);
 }
 
 /*gallery setup*/

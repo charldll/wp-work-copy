@@ -2,54 +2,38 @@
 <?php get_header(); ?>
 <?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
-      <!--section with general info about us-->
-      <h1 id="home">In need of a website? You are in the right place!</h1>
-      <section id="team">
-        <div class="section-aboutus">
-          <div class="about-card">
-            <?php echo wp_get_attachment_image (56,'thumbnail')?>
-            <div>
-              <h2>Meet Hania</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                eius saepe, reprehenderit laudantium deleniti incidunt, rem
-                blanditiis corrupti unde tenetur mollitia maiores quae
-                laboriosam. Accusamus vitae ad delectus deserunt consectetur
-                repudiandae laborum minima quia voluptates consequuntur aliquid
-                expedita nobis rerum saepe, laudantium nemo quasi molestiae
-                veritatis.
-              </p>
-            </div>
+      <!-- section with general info about us -->
+      <!-- welcome text area -->
+      <h1 id = "home"> <?php get_field('hero_text') ?> </h1>
+      <section id = "team">
+        <div class = "section-aboutus">
+          <div class = "about-card">
+            <?php echo wp_get_attachment_image (get_field ('face_pic_1'), 'thumbnail')?>
+              <div class = "textbox">
+                <h2><?php echo get_field('header_textbox_1') ?></h2>
+                <?php echo get_field('textbox_1') ?>
+              </div>
           </div>
-          <div class="about-card flex-reverse photo-to-right">
-            <?php echo wp_get_attachment_image (60,'thumbnail')?>
-            <div>
-              <h2>Say Hello to Inga</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Numquam, maxime amet! Amet tempore molestias ratione nesciunt,
-                cumque, voluptate unde numquam harum sapiente, incidunt
-                perspiciatis reprehenderit id corrupti repellat ut dolores
-                architecto at? Recusandae, deserunt officiis! Magnam natus autem
-                consequuntur doloribus maxime vero. Corrupti, quisquam. Animi
-                nesciunt earum eligendi dignissimos cumque veniam neque?
-              </p>
+          <!-- if the header 2 has text, add more info -->
+          <?php if(!empty(get_field('header_textbox_2'))) { ?>
+            <div class = "about-card flex-reverse photo-to-right">
+                <?php echo wp_get_attachment_image (get_field('face_pic_2'),'thumbnail')?>
+                <div class = 'textbox'>
+                  <h2><?php echo wp_kses_post (get_field('header_textbox_2') )?></h2>
+                  <?php echo get_field('textbox_2') ?>
+                </div>
             </div>
-          </div>
-          <div class="about-card">
-            <?php echo wp_get_attachment_image (50,'thumbnail')?>
-            <div>
-              <h2>Get To Know Agnieszka</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. In
-                molestiae voluptas aut debitis. Quos non velit corrupti aliquid
-                fuga quod facere, iure ea, suscipit minus aperiam excepturi
-                natus debitis ducimus porro? Nobis illum similique, animi esse
-                quam eius et error. Illum accusantium tempora quibusdam atque
-                facilis?
-              </p>
+          <?php } ?>
+          <!-- if header 3 has text, add more info -->
+          <?php if(!empty(get_field('header_textbox_3'))) { ?>
+            <div class = "about-card">
+              <?php echo wp_get_attachment_image (get_field('face_pic_3'),'thumbnail')?>
+                <div class = 'textbox'>
+                  <h2><?php echo get_field('header_textbox_3') ?></h2>
+                  <?php echo get_field ('textbox_3') ?>
+                </div>
             </div>
-          </div>
+          <?php } ?>
         </div>
       </section>
       <!--section with actual portfolio-->
@@ -155,6 +139,9 @@
         </div>
       </section>
   <?php endwhile; ?>
+
+  <!-- pages with posts -->
+
 	<?php the_posts_pagination( array(
 		'prev_text'          => __( '<' ),
 		'next_text'          => __( '>' ),
