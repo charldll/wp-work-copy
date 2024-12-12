@@ -5,17 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<title><?php wp_title(''); ?></title>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0" />
   <link
-    href="style.css"
-    rel="stylesheet" />
-    <!--stylesheet linked-->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com" />
+  href="style.css"
+  rel="stylesheet" />
+  <!--stylesheet linked-->
   <!--fonts linked-->
   <link
     rel="preconnect"
@@ -27,9 +20,10 @@
   <!--icons set link-->
   <script
     src="https://kit.fontawesome.com/87c69e0790.js"
-    crossorigin="anonymous"></script>
-</head>
-<?php wp_head(); ?>
+    crossorigin="anonymous">
+  </script>
+  <?php wp_head(); ?>
+  </head>
 <body>
 <header>
   <nav>

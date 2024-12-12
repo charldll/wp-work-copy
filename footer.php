@@ -1,4 +1,3 @@
-</main>
 <footer>
   <ul class="stopka">
     <li>&copy;</li>
@@ -23,5 +22,6 @@
   </ul>
 </footer>
 <?php wp_footer(); ?>
+</main>
 </body>
 </html>

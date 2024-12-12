@@ -57,14 +57,14 @@
         <div class="section-projects">
           <div class="gallery">
             <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
-            <?php echo wp_get_attachment_image (66,'medium')?>
+            <?php echo wp_get_attachment_image (64,'medium')?>
+            <?php echo wp_get_attachment_image (63,'medium')?>
+            <?php echo wp_get_attachment_image (62,'medium')?>
+            <?php echo wp_get_attachment_image (61,'medium')?>
+            <?php echo wp_get_attachment_image (53,'medium')?>
+            <?php echo wp_get_attachment_image (52,'medium')?>
+            <?php echo wp_get_attachment_image (51,'medium')?>
+            <?php echo wp_get_attachment_image (57,'medium')?>
           </div>
         </div>
       </section>
