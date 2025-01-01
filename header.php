@@ -81,21 +81,21 @@
             ></a>
           </li>
           <li>
-            <a href="articles"
+            <a href="/wordpress/articles"
               ><i
                 class="fa-regular fa-newspaper fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i
               ></a>
           </li>
           <li>
-            <a href="gallery"
+            <a href="/wordpress/gallery"
               ><i
                 class="fa-regular fa-image fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i
             ></a>
           </li>
           <li>
-            <a href="#contact"
+            <a href="/wordpress/contact"
               ><i
                 class="fa-regular fa-address-card fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i

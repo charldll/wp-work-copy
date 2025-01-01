@@ -1,4 +1,3 @@
-<!--section with actual portfolio-->
 <?php /* Template name: gallery page */ ?>
 <?php get_header(); ?>
     <section id="portfolio">
