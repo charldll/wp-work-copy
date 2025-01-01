@@ -108,8 +108,6 @@ header {
   left: 0;
   top: 0;
   height: 100%;
-  /* Without it photo-with-tape goes on to of the header when scrolling, don't know why - mask effect used??*/
-  z-index: 10;
 }
 
 /*navigation existing inside header*/

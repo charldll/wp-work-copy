@@ -69,27 +69,35 @@
           d="M6 18 18 6M6 6l12 12" />
         </svg>
       </label>
+        <!-- for icons: fa-(style) fa-(icon name) fa-fw (fixed-width) -->
         <ul
           id="menu"
           class="menu">
           <li>
-            <a href="#team"
+            <a href="/wordpress"
               ><i
-                class="fa-regular fa-circle-user"
+                class="fa-regular fa-circle-user fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i
             ></a>
           </li>
           <li>
-            <a href="#portfolio"
+            <a href="articles"
               ><i
-                class="fa-regular fa-image"
+                class="fa-regular fa-newspaper fa-fw"
+                style="font-size: 30px; color: rgb(37, 56, 41)"></i
+              ></a>
+          </li>
+          <li>
+            <a href="gallery"
+              ><i
+                class="fa-regular fa-image fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i
             ></a>
           </li>
           <li>
             <a href="#contact"
               ><i
-                class="fa-regular fa-address-card"
+                class="fa-regular fa-address-card fa-fw"
                 style="font-size: 30px; color: rgb(37, 56, 41)"></i
             ></a>
           </li>

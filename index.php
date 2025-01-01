@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
-		<?php get_template_part( 'content', 'article' ); ?>
+		<?php get_template_part( 'content', 'article', ); ?>
 	<?php endwhile; ?>
 	<?php the_posts_pagination( array(
 		'prev_text'          => __( '<' ),
